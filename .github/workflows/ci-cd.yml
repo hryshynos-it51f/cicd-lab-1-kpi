@@ -19,7 +19,7 @@ jobs:
           password: ${{ secrets.DOCKERHUB_TOKEN }}
 
       - name: Build Docker image
-        run: docker build -t yourname/ci-cd-lab:latest .
+        run: docker build -t kepalex/hryshyn-phd-repo:latest .
 
       - name: Push Docker image
-        run: docker push yourname/ci-cd-lab:latest
+        run: docker push kepalex/hryshyn-phd-repo:latest
